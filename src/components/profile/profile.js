@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import './profile.css';
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
@@ -25,3 +27,10 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
     </div>
   );
 };
+Profile.propTypes ={
+  username:PropTypes.string, 
+  tag:PropTypes.string,
+  location:PropTypes.string,
+  avatar:PropTypes.string,
+  stats:PropTypes.object
+}

@@ -1,4 +1,5 @@
 import './statistics.css';
+import PropTypes from 'prop-types';
 export const Statistics = ({ title, stats }) => {
   return (
     <section className="statistics">
@@ -19,3 +20,6 @@ export const Statistics = ({ title, stats }) => {
     </section>
   );
 };
+Statistics.propTypes = {
+  stats:PropTypes.array
+}
